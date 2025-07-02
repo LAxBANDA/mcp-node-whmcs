@@ -13,6 +13,9 @@ RUN npm install
 # Copia el resto de la aplicación
 COPY . .
 
+# Construye la aplicación
+RUN npm run build
+
 # Expone el puerto 3403
 EXPOSE 3403
 
