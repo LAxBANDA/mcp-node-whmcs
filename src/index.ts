@@ -335,7 +335,6 @@ class WHMCSMCPServer {
 if (!process.env.WHMCS_URL || !process.env.WHMCS_IDENTIFIER || !process.env.WHMCS_SECRET|| !process.env.WHMCS_ACCESS_KEY) {
   console.error("Error: Variables de entorno requeridas no configuradas");
   console.error("WHMCS_URL, WHMCS_IDENTIFIER, WHMCS_SECRET, WHMCS_ACCESS_KEY son obligatorias");
-  process.exit(1);
 }
 
 const server = new WHMCSMCPServer();
